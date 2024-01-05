@@ -1,0 +1,35 @@
+﻿//Option A : inclure tout bootstrap
+
+$theme-colors: ( 
+    'primary' :#BA9B00 
+);
+
+//Les puissance des margin de Bootstrap sont des multiplié par 0,25 voir 2 mais il n'y a pas de regles précis 
+$spacer: 1rem;
+ 
+$Spacers:(
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    5: ($spacer * .3),
+    6: ($spacer * .6),
+); 
+
+$grid-breakpoints:(
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    3xl: 1600px
+ );
+
+@import "../lib/bootstrap-npm/node_modules/bootstrap/scss/bootstrap.scss";
+
+//Option B : inclure seulement ce qu'on a besoin c-a-d utiliser que 
+//les grid
+//reboot : Eviter l'effet de base des navigateur
+//utility : Les composantscls
+ 
